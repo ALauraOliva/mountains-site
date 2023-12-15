@@ -1,3 +1,5 @@
+//? Tab Funcionality
+
 const option1 = document.getElementById("option1");
 const option2 = document.getElementById("option2");
 const content1 = document.getElementById("content1");
@@ -27,4 +29,26 @@ option1.addEventListener("click", () => {
 option2.addEventListener("click", () => {
   chose = 2;
   changeOption();
+});
+
+//?Smooth Scroll Behavior
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  for (const link of links) {
+    link.addEventListener("click", clickHandler);
+  }
+
+  function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const target = document.querySelector(href);
+    const offsetTop = target.offsetTop;
+
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  }
 });

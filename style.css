@@ -224,7 +224,7 @@ p {
 .footer > p {
   color: var(--third-color);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .footer > img {
