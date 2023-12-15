@@ -1,0 +1,203 @@
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+:root {
+  --primary-color: #414f6b;
+  --secondary-color: #9fa7b5;
+  --third-color: #63769d;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+#landing-section {
+  background-image: url(/images/landing-background.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: 40% top;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem 1rem;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 4rem;
+}
+
+.links-landing {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--white-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.links-landing:hover {
+  color: var(--primary-color);
+}
+
+#history-section {
+  background-image: url(/images/history-section.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: 40% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.links-history {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.links-history:hover {
+  color: var(--secondary-color);
+}
+
+.nav2 {
+  background-color: var(--white-color);
+}
+
+.history-content {
+  width: 61%;
+  align-self: center;
+  padding: 6rem 0;
+}
+
+.history-content > p {
+  margin: 1rem 6rem;
+}
+
+.numbers-title {
+  height: 14rem;
+}
+
+#team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  width: 61%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav3 {
+  background-color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.links-team {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 64%;
+}
+
+.links-container {
+  height: max-content;
+}
+
+.link-mountain {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-mountain:hover {
+  text-decoration: underline;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.tab-container {
+  height: 50rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--third-color);
+  padding: 1.2rem 1rem;
+  height: max-content;
+}
+
+.footer > p {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.footer > img {
+  height: fit-content;
+}
+
+@media (max-width: 1400px) {
+  .img-content,
+  .banner {
+    width: 81%;
+  }
+
+  #history-section {
+    background-image: url(/images/history-section.png);
+    height: 100vh;
+    background-size: auto;
+    background-position: 40% 10%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 1400px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 6.2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .numbers-title {
+    height: 9rem;
+  }
+}
