@@ -293,20 +293,20 @@ p {
     height: 9rem;
   }
   .tab-container {
-    display: none; /* Oculta el tab en dispositivos móviles */
+    display: none;
   }
 
   .accordion-container {
-    display: block; /* Muestra el acordeón en dispositivos móviles */
+    display: block;
   }
 }
 
 @media (min-width: 768px) {
   .tab-container {
-    display: block; /* Oculta el tab en dispositivos móviles */
+    display: block;
   }
 
   .accordion-container {
-    display: none; /* Muestra el acordeón en dispositivos móviles */
+    display: none;
   }
 }
