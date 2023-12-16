@@ -180,7 +180,8 @@ p {
   cursor: pointer;
 }
 
-.option-active {
+.option-active,
+.active {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   text-decoration: underline;
@@ -203,12 +204,40 @@ p {
   max-width: 80vw;
 }
 
-#content1 {
+#content1,
+.acc-cont1 {
   background-image: url(/images/mountain1.png);
 }
 
-#content2 {
+#content2,
+.acc-cont2 {
   background-image: url(/images/mountain2.png);
+}
+
+.accordion-container {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.accordion {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.acc-cont {
+  padding: 4rem;
+  background-size: cover;
+  background-position: center 90%;
+}
+
+.acc-cont > img {
+  max-width: 80vw;
 }
 
 .footer {
@@ -259,8 +288,25 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .numbers-title {
     height: 9rem;
+  }
+  .tab-container {
+    display: none; /* Oculta el tab en dispositivos móviles */
+  }
+
+  .accordion-container {
+    display: block; /* Muestra el acordeón en dispositivos móviles */
+  }
+}
+
+@media (min-width: 768px) {
+  .tab-container {
+    display: block; /* Oculta el tab en dispositivos móviles */
+  }
+
+  .accordion-container {
+    display: none; /* Muestra el acordeón en dispositivos móviles */
   }
 }
